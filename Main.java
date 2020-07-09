@@ -17,38 +17,7 @@ import java.util.Scanner;
 class Main{
     public static void main(String[] args)
     {
-  
-        
-        class SortByFirstName implements Comparator<Shirt>
-{
-    @Override
-    public int compare(final Shirt shirt, final Shirt shirt2) {
-        return shirt.getFirstName().compareTo(shirt2.getFirstName());
-    }
-}
-class SortByLastName implements Comparator<Shirt>
-{
-    @Override
-    public int compare(final Shirt shirt, final Shirt shirt2) {
-        return shirt.getLastName().compareTo(shirt2.getLastName());
-    }
-}
-class SortByCity implements Comparator<Shirt>
-{
-    @Override
-    public int compare(final Shirt shirt, final Shirt shirt2) {
-        return shirt.getCity().compareTo(shirt2.getCity());
-    }
-}
-class SortByAge implements Comparator<Shirt>
-{
-    @Override
-    public int compare(final Shirt shirt, final Shirt shirt2) {
-        return shirt.getAge().compareTo(shirt2.getAge());
-    }
-}
-
-ArrayList list=new ArrayList();
+   ArrayList list=new ArrayList();
    Scanner scanner = new Scanner(System.in);
         int flag=0;
         String firstname,lastname;
